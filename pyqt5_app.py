@@ -17,13 +17,11 @@ class App(QWidget):
         labelReading = QLabel(self.text)
         quitButton= QPushButton("quit")
         quitButton.clicked.connect(self.quit)
-        cancelButton = QPushButton("Cancel")
 
         grid = QGridLayout()
         grid.addWidget(title,0,0,1,1) 
         grid.addWidget(labelReading,0,1,1,1) 
         grid.addWidget(quitButton,1,1,1,1) 
-        grid.addWidget(cancelButton,1,2,1,1) 
         
         self.setLayout(grid)    
         
